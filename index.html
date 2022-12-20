@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- MaterializeCSS stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Custom styles for the page -->
+    <style>
+      body {
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+      }
+      /* Center the form on the page */
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      }
+
+      /* Add some spacing between the form fields */
+      .input-field {
+        margin-bottom: 1rem;
+      }
+
+      /* Style the submit button */
+      .btn {
+        width: 100%;
+        margin-top: 10px
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Form to collect email and password -->
+      <form id="signup-form" class="card-panel">
+        <h3>Sign In</h3>
+        <div class="input-field">
+          <input type="email" id="email" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password" required>
+          <label for="password">Password</label>
+        </div>
+        <!-- Balance field, hidden by default -->
+        <div id="balance-field" class="input-field" style="display: none;">
+          <input type="number" id="balance">
+          <label for="balance">Balance</label>
+        </div>
+      <!-- Sign in/sign up buttons -->
+      <div>
+        <span id="signin-text" style="cursor: pointer;">Sign In</span>
+        <span style="margin: 0 1rem;">|</span>
+        <span id="signup-text" style="cursor: pointer;">Sign Up</span>
+      </div>
+      <button id="submit-button" class="btn waves-effect waves-light" type="submit">Submit
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+    </div>
+    <!-- Custom JavaScript for the page -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./index.js"></script>
+    <!-- MaterializeCSS and jQuery libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

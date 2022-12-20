@@ -1,0 +1,11 @@
+{
+  "name": "wallet-frontend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "frontend ui for a wallet application",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  },
+  "author": "Nathaniel Babalola",
+  "license": "MIT"
+}
