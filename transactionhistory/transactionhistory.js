@@ -129,7 +129,7 @@ function createTransactionHistoryTable(transactions) {
 
     // Check if the user is allowed to refund the transaction
     const userId = localStorage.getItem('userId');
-    if (userId == transaction.receiverId) {
+    if (userId == transaction.receiverId && !transaction.refundRef) {
       $('#refund-button').removeClass('disabled');
     } else {
       $('#refund-button').addClass('disabled');
