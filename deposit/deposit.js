@@ -50,7 +50,7 @@ $(document).ready(function() {
           // Update the balance in the page
           $('#balance').text(response.data.balance);
           // Show a success message
-          M.toast({html: 'Withdrawal successful'});
+          M.toast({html: 'Deposit successful'});
         } else {
           // Show an error message
           M.toast({html: response.error || 'Something went wrong, could not process deposit request'});
